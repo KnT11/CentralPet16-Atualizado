@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 8 de mai. de 2023, 19:41:50
-    Author     : QI
---%>
-
 <%
    if(session.getAttribute("userLoggedSession") != null){
         response.sendRedirect("home.jsp");

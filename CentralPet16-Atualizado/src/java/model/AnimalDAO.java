@@ -50,9 +50,9 @@ public class AnimalDAO {
     
     
     //SELECT
-    public AnimalList<Animal> listAll() throws SQLException {
+    public ArrayList<Animal> listAll() throws SQLException {
         //Criar lista vazia
-        AnimalList<Animal> list = new AnimalList<>();
+        ArrayList<Animal> list = new ArrayList<>();
         
         //Criar query para pesquisa no BD
         String query = "SELECT * FROM animal";
@@ -182,9 +182,9 @@ public class AnimalDAO {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    private static class AnimalList<T> {
+    private static class ArrayList<T> {
 
-        public AnimalList() {
+        public ArrayList() {
         }
 
         private void add(Animal an) {
